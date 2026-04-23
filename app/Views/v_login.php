@@ -21,8 +21,8 @@ $password = [
       href="<?= base_url()?>NiceAdmin/assets/vendor/simple-datatables/style.css"
       rel="stylesheet"
     />
-<img src="<?php echo base_url() ?>NiceAdmin/assets/img/logo.png" alt="">
-<span class="d-none d-lg-block">Toko</span>
+
+
     <!-- Template Main CSS File -->
     <link
       href="<?= base_url()?>NiceAdmin/assets/css/style.css"
@@ -51,7 +51,7 @@ $password = [
                     class="logo d-flex align-items-center w-auto"
                   >
                     <img src="<?php echo base_url() ?>NiceAdmin/assets/img/logo.png" alt="">
-<span class="d-none d-lg-block">Toko</span>
+<span class="d-none d-lg-block">Two Three Mart</span>
                   </a>
                 </div>
                 <!-- End Logo -->
