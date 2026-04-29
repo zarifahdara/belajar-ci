@@ -28,6 +28,13 @@ if (session()->get('role') == 'admin') {
         <?php
 }
 ?>
+        <li class="nav-item">
+            <a class="nav-link <?php echo (uri_string() == 'profile') ? "" : "collapsed" ?>" href="profile">
+                <i class="bi bi-person-circle"></i>
+                <span>Profile</span>
+            </a>
+        </li><!-- End Profile Nav -->
+
     </ul>
 
 </aside><!-- End Sidebar-->
