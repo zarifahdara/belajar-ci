@@ -29,6 +29,12 @@ if (session()->get('role') == 'admin') {
 }
 ?>
         <li class="nav-item">
+    <a class="nav-link <?php echo (uri_string() == 'history') ? "" : "collapsed" ?>" href="history">
+        <i class="bi bi-person"></i>
+        <span>History</span>
+    </a>
+</li><!-- End History Nav -->
+        <li class="nav-item">
             <a class="nav-link <?php echo (uri_string() == 'profile') ? "" : "collapsed" ?>" href="profile">
                 <i class="bi bi-person-circle"></i>
                 <span>Profile</span>
