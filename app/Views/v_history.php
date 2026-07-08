@@ -80,7 +80,41 @@ History Transaksi Pembelian <strong><?= $username ?></strong>
                                 <hr>
                             <?php endforeach; ?>
                         <?php endif; ?>
-                        Ongkir <?= number_to_currency($item['ongkir'], 'IDR') ?>
+                        <hr>
+
+<table class="table table-sm">
+
+    <tr>
+        <td>Ongkir</td>
+        <td><?= number_to_currency((float)($item['ongkir'] ?? 0), 'IDR') ?></td>
+    </tr>
+
+    <tr>
+        <td>Biaya Jasa</td>
+        <td><?= number_to_currency((float)($item['biaya_jasa'] ?? 0), 'IDR') ?></td>
+    </tr>
+
+    <tr>
+        <td>Voucher</td>
+        <td><?= !empty($item['voucher_code']) ? $item['voucher_code'] : '-' ?></td>
+    </tr>
+
+    <tr>
+        <td>Diskon Voucher</td>
+        <td>-<?= number_to_currency((float)($item['diskon_voucher'] ?? 0), 'IDR') ?></td>
+    </tr>
+
+    <tr>
+        <td>Free Mouse</td>
+        <td>-<?= number_to_currency((float)($item['free_mouse'] ?? 0), 'IDR') ?></td>
+    </tr>
+
+    <tr class="table-success">
+        <th>Total Bayar</th>
+        <th><?= number_to_currency((float)($item['total_harga'] ?? 0), 'IDR') ?></th>
+    </tr>
+
+</table>
                     </div>
                 </div>
             </div>
